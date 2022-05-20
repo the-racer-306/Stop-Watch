@@ -1,0 +1,60 @@
+:root {
+  --primary-color: crimson;
+  --dark-color: #1f2937;
+  --very-dark: #111827;
+  --light: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--light);
+}
+
+.watch {
+  text-align: center;
+  background-color: var(--very-dark);
+  width: 100%;
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.time {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.control button {
+  background: none;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  color: var(--light);
+  background-color: var(--primary-color);
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  background-color: var(--dark-color);
+}
